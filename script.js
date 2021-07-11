@@ -10,9 +10,8 @@ const thirdNestingSearchObject = {
     "lng": "-168.8889"
 }
 
-const mainFunction = ( searchObject ) => {
-
-    return users.filter ( object => {
+const mainFunction = searchObject => 
+    users.filter ( object => {
 
         let flag = false ;
 
@@ -39,8 +38,6 @@ const mainFunction = ( searchObject ) => {
         } ( object )) ;
 
     } ) ;
-
-}
 
 console.log( `Поиск первого уровня вложенности ${JSON.stringify( firstNestingSearchObject )}` ) ;
 mainFunction( firstNestingSearchObject ).forEach( object => {
