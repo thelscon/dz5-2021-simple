@@ -40,16 +40,15 @@ const mainFunction = searchObject =>
     } ) ;
 
 console.log( `Поиск первого уровня вложенности ${JSON.stringify( firstNestingSearchObject )}` ) ;
-mainFunction( firstNestingSearchObject ).forEach( object => {
+mainFunction( firstNestingSearchObject ).forEach( object => {                                       //вывод пользователей
     console.log( object ) ;
 } ) ;
 
 console.log( `Поиск второго уровня вложенности ${JSON.stringify( secondNestingSearchObject )} `);
-mainFunction( secondNestingSearchObject ).forEach( object => {
+mainFunction( secondNestingSearchObject ).forEach( object => {                                      //вывод пользователей
     console.log( object ) ;
 } ) ;
 
 console.log( `Поиск третьего уровня вложенности ${JSON.stringify( secondNestingSearchObject )} `);
-mainFunction( thirdNestingSearchObject ).forEach( object => {
-    console.log( object ) ;
+mainFunction( thirdNestingSearchObject ).forEach( object => {                                       //вывод пользователей
 } ) ;
