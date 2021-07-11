@@ -51,4 +51,5 @@ mainFunction( secondNestingSearchObject ).forEach( object => {                  
 
 console.log( `Поиск третьего уровня вложенности ${JSON.stringify( secondNestingSearchObject )} `);
 mainFunction( thirdNestingSearchObject ).forEach( object => {                                       //вывод пользователей
+    console.log( object ) ;
 } ) ;
